@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="uz">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover">
+<title>Anime Card Arena</title>
+<link rel="stylesheet" href="/style.css">
+<script src="https://telegram.org/js/telegram-web-app.js"></script>
+</head>
+<body>
+<div id="toast"></div>
+
+<header class="topbar">
+  <div class="brand">🌌 Anime Card Arena</div>
+  <div class="balances">
+    <span class="pill">🪙 <b id="bal-coin">0</b></span>
+    <span class="pill">🔮 <b id="bal-chakra">0</b></span>
+    <span class="pill">💵 <b id="bal-cash">0</b></span>
+  </div>
+</header>
+
+<main id="app">
+  <section id="screen-cards" class="screen active">
+    <div class="section-head"><div><h2>🎴 Mening kartalarim</h2><p>To‘plangan kartalaringiz</p></div></div>
+    <div id="card-grid" class="grid"></div>
+  </section>
+
+  <section id="screen-spells" class="screen">
+    <div class="section-head"><div><h2>🔮 Afsunlar</h2><p>Jangda ishlatish uchun sotib oling</p></div></div>
+    <div id="spell-tabs" class="tabs"></div>
+    <div id="spell-grid" class="grid"></div>
+  </section>
+
+  <section id="screen-shop" class="screen">
+    <div class="section-head"><div><h2>🏪 Do‘kon</h2><p>Coin bilan karta va Chakra sotib oling</p></div></div>
+    <h3 class="sub-title">🎴 Kartalar</h3>
+    <div id="shop-cards" class="grid"></div>
+    <h3 class="sub-title">🔮 Chakra paketlari</h3>
+    <div id="shop-chakra" class="grid"></div>
+  </section>
+
+  <section id="screen-arena" class="screen">
+    <div id="arena-setup"></div>
+    <div id="arena-queue" style="display:none"></div>
+    <div id="arena-live" style="display:none"></div>
+  </section>
+
+  <section id="screen-profile" class="screen">
+    <div class="section-head"><div><h2>👤 Profil</h2></div></div>
+    <div id="profile-card" class="glass profile-card"></div>
+  </section>
+</main>
+
+<nav class="nav">
+  <button class="nav-btn active" data-screen="cards">🎴<span>Kartalar</span></button>
+  <button class="nav-btn" data-screen="spells">🔮<span>Afsunlar</span></button>
+  <button class="nav-btn" data-screen="shop">🏪<span>Do‘kon</span></button>
+  <button class="nav-btn" data-screen="arena">⚔️<span>Arena</span></button>
+  <button class="nav-btn" data-screen="profile">👤<span>Profil</span></button>
+</nav>
+
+<script src="/app.js"></script>
+</body>
+</html>
