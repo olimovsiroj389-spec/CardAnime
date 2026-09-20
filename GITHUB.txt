@@ -1,0 +1,16 @@
+GITHUB PAGES UCHUN
+
+1) GitHub repo ichida fayllarni BARCHASINI repository root'ga yuklang.
+2) Hech qanday web/, assets/, css/ yoki js/ papkasi kerak emas.
+3) index.html shu root'da turishi kerak.
+4) style.css va app.js ham index.html bilan bir qatorda turadi.
+5) SVG rasmlar ham shu root'da: naruto_childhood.svg, gojo_awakened.svg va hokazo.
+6) Settings -> Pages -> Deploy from branch -> main -> /(root).
+
+MUHIM:
+GitHub Pages faqat frontendni beradi. Telegram Web App ichidagi real Coin, karta sotib olish, upgrade va Arena API uchun Python app.py alohida HTTPS serverda ishlashi kerak.
+
+app.js ning yuqorisidagi API_BASE ga Python backend manzilini yozing:
+const API_BASE = 'https://YOUR-BACKEND-DOMAIN.example';
+
+Agar Web App Python serverning o‘zidan ochilsa, API_BASE bo‘sh qolishi mumkin.
